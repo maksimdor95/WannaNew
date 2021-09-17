@@ -1,0 +1,41 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    // background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
+    background: url(../img/main_bg.jpg) no-repeat 50%/cover;
+    padding-top: 205px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    &__title {
+        width: 589px;
+        margin-top: 26px;
+    }
+    &__first{
+        position: relative;
+        padding-left:10px;
+        margin-right: 22.9rem;
+        @include before-circle;
+        z-index: 2;
+    }
+    &__btns {
+        margin-top: 19px;
+        margin-right: 21.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 247px;
+    }
+    &__link {
+        color: #000;
+        font-weight: bold;
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
